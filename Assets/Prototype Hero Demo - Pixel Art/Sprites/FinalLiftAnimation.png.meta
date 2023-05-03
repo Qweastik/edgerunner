@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0e23bb6ad41d47468d671dbf159d388
+guid: 80f334994c47a584c99a1c55bb2d9e5d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RunAnimation_0
+      name: FinalLiftAnimation_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 91
+        y: 22
+        width: 11
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d266c672f5502b341a3c92add83141f3
-      internalID: -364654274
+      spriteID: 3c6c839fc32dd824d8b8db02773ed9b8
+      internalID: 1362626845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunAnimation_1
+      name: FinalLiftAnimation_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 158
+        y: 25
+        width: 11
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239c45b02076182488238cfcdaa5f5aa
-      internalID: 1641298765
+      spriteID: 63598dd58b40b8d4b84a935a895cd148
+      internalID: 1333288729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunAnimation_2
+      name: FinalLiftAnimation_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 226
+        y: 32
+        width: 8
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c2a2649b4ce1546ab925a2df40e622
-      internalID: -269879389
+      spriteID: 04d3c77f96b40e3499ef4bf5267e4018
+      internalID: 1490588158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunAnimation_3
+      name: FinalLiftAnimation_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 23
+        y: 5
+        width: 9
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,134 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a234d546159092f4d81d9ea494808a3f
-      internalID: 751370331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb2233e921f561941b02b7ce71e86c8c
-      internalID: -1983716357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd3a69671a21951429c858d0e3bf1c5f
-      internalID: 1943288897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be271d8c67873da42a9b95b4110a3980
-      internalID: 1176445098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 764c421f3bd57ab4eadccd696acfc408
-      internalID: -540980568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 770bd9a1d5ea8a04ab7a1d3c7c0956f0
-      internalID: -493596205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunAnimation_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1300653539e36c543a1f45c4464cbefd
-      internalID: -877203371
+      spriteID: 7a6a2f7557bf52f44ba2e72e2027dc6f
+      internalID: 374465688
       vertices: []
       indices: 
       edges: []
@@ -337,16 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RunAnimation_9: -877203371
-      RunAnimation_3: 751370331
-      RunAnimation_1: 1641298765
-      RunAnimation_0: -364654274
-      RunAnimation_5: 1943288897
-      RunAnimation_8: -493596205
-      RunAnimation_7: -540980568
-      RunAnimation_4: -1983716357
-      RunAnimation_2: -269879389
-      RunAnimation_6: 1176445098
+      FinalLiftAnimation_3: 374465688
+      FinalLiftAnimation_2: 1490588158
+      FinalLiftAnimation_0: 1362626845
+      FinalLiftAnimation_1: 1333288729
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

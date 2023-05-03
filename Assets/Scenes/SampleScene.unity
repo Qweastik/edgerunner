@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60910112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.119, y: 0.415, z: 0.041112736}
+  m_LocalPosition: {x: 0.082, y: 0.316, z: 0.041112736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -538,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596745278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.010000229, y: -0.53, z: 0.041112736}
+  m_LocalPosition: {x: 0.002, y: -0.315, z: 0.041112736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1403,7 +1403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013986704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.135, y: -0.511, z: 0.041112736}
+  m_LocalPosition: {x: 0.061, y: -0.363, z: 0.041112736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1488,7 +1488,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0409f2fddf07780408257c186ab69681, type: 3}
+  m_Sprite: {fileID: 248005642, guid: f5d8b53fd1ac24648849267aa0a60f25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1507,7 +1507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072345902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.956, y: -2.54, z: -0.0013738265}
+  m_LocalPosition: {x: -7.893, y: -2.483, z: -0.0013738265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1530,8 +1530,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5625, y: 1.3125}
+  m_Offset: {x: 0.021553755, y: 0.003079176}
+  m_Size: {x: 0.35487986, y: 0.9984307}
   m_Direction: 0
 --- !u!50 &2072345907
 Rigidbody2D:
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 1088
-  dashImpulse: 6000
+  dashImpulse: 4000
   lockDash: 0
   onWall: 0
   onWallUp: 0
