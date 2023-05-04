@@ -139,20 +139,22 @@ public class playerMove : MonoBehaviour
     public bool onWall;
     public bool onWallUp;
     public bool onWallDown;
+    public LayerMask Wall;
     public Transform WallCheckUp;
     public Transform WallCheckDown;
     public float WallcheckRayDistance = 1f;
     private float WallcheckRadiusDown;
     public bool onLedge;
     public float ledgeRayCorrectY = 0.5f;
-    public LayerMask Wall;
+    
 
     void CheckingWall()
     {
         onWallUp = Physics2D.Raycast(WallCheckUp.position, new Vector2(transform.localScale.x, 0), WallcheckRayDistance, Wall);
         onWallDown = Physics2D.OverlapCircle(WallCheckDown.position, WallcheckRadiusDown, Wall);
         onWall = (onWallUp && onWallDown);
-        anim.SetBool("onWall", onWall);       
+        anim.SetBool("onWall", onWall); 
+        
     }
 
     void CheckingLege()
@@ -204,6 +206,7 @@ public class playerMove : MonoBehaviour
         if (onWall && !onGround)
         {
             moveVector.y = Input.GetAxisRaw("Vertical");
+            anim.SetFloat("UpDown", moveVector.y);
 
             if (!blockMoveX)
             {

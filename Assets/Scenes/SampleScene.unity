@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60910112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.119, y: 0.415, z: 0.041112736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.008, y: 0.343, z: 0.041112736}
+  m_LocalScale: {x: 0.75251, y: 0.75251, z: 0.75251}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2072345905}
@@ -538,8 +538,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596745278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.010000229, y: -0.53, z: 0.041112736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.041, y: -0.316, z: 0.041112736}
+  m_LocalScale: {x: 0.84974, y: 0.84974, z: 0.84974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2072345905}
@@ -1403,8 +1403,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013986704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.135, y: -0.511, z: 0.041112736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.017, y: -0.328, z: 0.041112736}
+  m_LocalScale: {x: 0.70832, y: 0.70832, z: 0.70832}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2072345905}
@@ -1488,7 +1488,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0409f2fddf07780408257c186ab69681, type: 3}
+  m_Sprite: {fileID: 216640668, guid: 0e7221d1e88b45a49a1b0acc078468da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1507,7 +1507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072345902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.956, y: -2.54, z: -0.0013738265}
+  m_LocalPosition: {x: -8.143, y: -2.52, z: -0.0013738265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1530,8 +1530,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5625, y: 1.3125}
+  m_Offset: {x: -0.00950408, y: 0.015544057}
+  m_Size: {x: 0.2900405, y: 0.97727275}
   m_Direction: 0
 --- !u!50 &2072345907
 Rigidbody2D:
@@ -1581,14 +1581,14 @@ MonoBehaviour:
     m_Bits: 1088
   dashImpulse: 6000
   lockDash: 0
-  onWall: 0
+  OnWall: 0
   onWallUp: 0
   onWallDown: 0
   WallCheckUp: {fileID: 60910113}
   WallCheckDown: {fileID: 2013986705}
-  WallcheckRayDistance: 0.22
+  WallcheckRayDistance: 0.16
   onLedge: 0
-  ledgeRayCorrectY: 0.29
+  ledgeRayCorrectY: 0.05
   Wall:
     serializedVersion: 2
     m_Bits: 128
