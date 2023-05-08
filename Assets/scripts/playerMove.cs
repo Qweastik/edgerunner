@@ -29,6 +29,8 @@ public class playerMove : MonoBehaviour
         Reflect();
         MoveOnWall();
         WallJump();
+        LedgeGo();
+
 
     }
 
@@ -37,6 +39,7 @@ public class playerMove : MonoBehaviour
         CheckingGround();
         CheckingWall();
         CheckingLege();
+        
     }
 
 
@@ -171,7 +174,9 @@ public class playerMove : MonoBehaviour
         }
         else { onLedge = false; }
 
-        if (onLedge)
+        anim.SetBool("onLedge", onLedge);
+
+        if (onLedge && Input.GetAxisRaw("Vertical") != -1)
         {
             rb.gravityScale = 0;
             rb.velocity = new Vector2(0, 0);
@@ -196,6 +201,20 @@ public class playerMove : MonoBehaviour
         }
     }
 
+    void LedgeGo()
+    {
+        if (onLedge && Input.GetKeyDown(KeyCode.W))
+        {
+            anim.Play("wallLedgeClimb");
+        }
+    }
+
+    public Transform finishLedgePosition;
+    void FinishLedge()
+    {
+        transform.position = new Vector3(finishLedgePosition.position.x, finishLedgePosition.position.y, finishLedgePosition.position.z);
+    }
+
 
 
     public float upDownSpeed = 4f;
@@ -208,17 +227,12 @@ public class playerMove : MonoBehaviour
             moveVector.y = Input.GetAxisRaw("Vertical");
             anim.SetFloat("UpDown", moveVector.y);
 
-            if (!blockMoveX)
+            if (!blockMoveX && moveVector.y == 0)
             {
-                if (moveVector.y == 0)
-                {
-                    rb.gravityScale = 0;
-                    rb.velocity = new Vector2(0, slideSpeed);
-                }
-                
+                rb.gravityScale = 0;
+                rb.velocity = new Vector2(0, slideSpeed);
             }
 
-            
             if (moveVector.y > 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, moveVector.y * upDownSpeed / 2);
