@@ -24,7 +24,7 @@ public class playerMove : MonoBehaviour
     void Update()
     {
         walk();
-        jump();
+        
         Dash();
         Reflect();
         MoveOnWall();
@@ -39,7 +39,8 @@ public class playerMove : MonoBehaviour
         CheckingGround();
         CheckingWall();
         CheckingLege();
-        
+        jump();
+
     }
 
 
