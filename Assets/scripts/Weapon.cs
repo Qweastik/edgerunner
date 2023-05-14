@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             anim.SetTrigger("Shoot");
-            Shoot();
+            
         }
     }
 
