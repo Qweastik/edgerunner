@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 969fa270d3656a34e97808145fd24b17
+guid: 6703a81f4a3ca3848a8a64457373873f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,64 +117,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shootingAnimDemo_0
+      name: meleeCombat_0
       rect:
         serializedVersion: 2
         x: 13
         y: 0
-        width: 12
+        width: 10
         height: 28
-      alignment: 9
-      pivot: {x: -0.26463333, y: 0.4863456}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e7d017491ea5df48a10d680a7728c81
-      internalID: -433650018
+      spriteID: d7bfc84af102a3246bde2497ae1bbac9
+      internalID: 373486258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shootingAnimDemo_1
+      name: meleeCombat_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 40
         y: 0
         width: 19
         height: 27
-      alignment: 9
-      pivot: {x: -0.16713685, y: 0.5185185}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5b626629781af4b83df863b4ce0b8a
-      internalID: 1797445365
+      spriteID: 733238a9f9749be4e9392e549b55900b
+      internalID: -1942013397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shootingAnimDemo_2
+      name: meleeCombat_2
       rect:
         serializedVersion: 2
         x: 74
         y: 0
-        width: 18
+        width: 20
         height: 27
-      alignment: 9
-      pivot: {x: -0.17642222, y: 0.4814815}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a32989b05fc1fe4996d58dbd0882d2b
-      internalID: -1210091879
+      spriteID: 8c0ee05f07ab79840b223b1dba8062cd
+      internalID: -200938365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeCombat_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6721dbf486b3404dbc175785c66d1a4
+      internalID: -890834495
       vertices: []
       indices: 
       edges: []
@@ -190,9 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      shootingAnimDemo_0: -433650018
-      shootingAnimDemo_1: 1797445365
-      shootingAnimDemo_2: -1210091879
+      meleeCombat_0: 373486258
+      meleeCombat_3: -890834495
+      meleeCombat_1: -1942013397
+      meleeCombat_2: -200938365
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
