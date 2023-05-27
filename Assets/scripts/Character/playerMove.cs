@@ -79,7 +79,7 @@ public class playerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             Physics2D.IgnoreLayerCollision(9, 10, true);
-            Invoke("IgnoreLayerOff", 0.5f);
+            Invoke("IgnoreLayerOff", 0.15f);
         }
 
         if (Input.GetKey(KeyCode.Space))
