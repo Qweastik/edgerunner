@@ -282,6 +282,19 @@ public class playerMove : MonoBehaviour
     }
 
 
+    public bool canAttack()
+    {
+        return  !onWall;
+    }
+
+    public bool canShooting()
+    {
+        return moveVector.x == 0 && onGround && !onWall;
+    }
+
+    
+
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

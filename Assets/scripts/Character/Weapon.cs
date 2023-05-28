@@ -7,13 +7,19 @@ public class Weapon : MonoBehaviour
     public Animator anim;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    private playerMove playerMove;
+
+    private void Awake()
+    {
+        playerMove = GetComponent<playerMove>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && playerMove.canShooting())
         {
             anim.SetTrigger("Shoot");
-            
+
         }
     }
 
@@ -21,4 +27,5 @@ public class Weapon : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+
 }

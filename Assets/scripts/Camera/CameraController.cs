@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
     {
         currentPosX = _newRoom.GetChild(0).position.x;
         currentPosY = _newRoom.GetChild(0).position.y;
-        
+        Debug.Log(currentPosY);
 
     }
 }

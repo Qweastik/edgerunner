@@ -15,11 +15,18 @@ public class playerCombat : MonoBehaviour
     public float attackRate = 0.5f;
     float nextAttackTime = 0f;
 
+    private playerMove playerMove;
+
+    private void Awake()
+    {
+        playerMove = GetComponent<playerMove>();
+    }
+
     void Update()
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.L) && playerMove.canAttack())
             {
                 Attack();
                 nextAttackTime = Time.time + 0.5f / attackRate;
