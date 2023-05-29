@@ -6,27 +6,28 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform previousRoom;
     [SerializeField] private Transform nextRoom;
-    [SerializeField] private CameraController cam;
+    [SerializeField] private CameraController camera;
+    [SerializeField] private playerMove player;
 
     private void Start()
     {
-        cam.MoveToNewRoom(previousRoom);
+        camera.MoveToNewRoom(player.transform);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")           
+        if (collision.tag == "Player")
         {
             if (collision.transform.position.x < transform.position.x)
             {
-                cam.MoveToNewRoom(nextRoom);
+                camera.MoveToNewRoom(nextRoom);
             }
 
             else
             {
-                cam.MoveToNewRoom(previousRoom);
+                camera.MoveToNewRoom(previousRoom);
             }
         }
     }
-   
+
 }
