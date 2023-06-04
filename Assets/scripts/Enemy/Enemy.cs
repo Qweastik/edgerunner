@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Animator anim;
+    
 
     public int maxHealth = 100;
     int currentHealth;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
             anim.SetBool("isDead", true);
 
             GetComponent<Collider2D>().enabled = false;
+
             this.enabled = false;
         }
     }
