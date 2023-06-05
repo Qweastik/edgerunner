@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public Animator anim;
     
 
-    public int maxHealth = 100;
+    public int maxHealth = 1;
     int currentHealth;
 
 

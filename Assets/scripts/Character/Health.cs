@@ -28,4 +28,21 @@ public class Health : MonoBehaviour
         }
         
     }
+
+    public void AddHealth(float _damage)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _damage, 0, startingHealth);
+    }
+
+    public void Respawn()
+    {
+        AddHealth(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+
+        GetComponent<playerMove>().enabled = true;
+        GetComponent<Weapon>().enabled = true;
+        GetComponent<playerCombat>().enabled = true;
+        dead = false;
+    }
 }
