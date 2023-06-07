@@ -8,6 +8,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject pauseScreen;
 
 
+    private void Awake()
+    {
+        pauseScreen.SetActive(false);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -19,10 +24,15 @@ public class UIManager : MonoBehaviour
                 pauseGame(true);
         }
     }
-    private void pauseGame(bool status)
+    public void pauseGame(bool status)
     {
 
         pauseScreen.SetActive(status);
+
+        if(status)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
     }
 
     public void Restart()
@@ -38,6 +48,5 @@ public class UIManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
