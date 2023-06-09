@@ -9,6 +9,8 @@ public class playerMove : MonoBehaviour
     public Vector2 moveVector;
     public float speed = 2f;
     public Animator anim;
+    public float coyoteTime = 0.2f;
+    public float coyoteTimerCounter;
 
 
     void Start()
@@ -31,7 +33,14 @@ public class playerMove : MonoBehaviour
         WallJump();
         LedgeGo();
 
-
+        if (onGround)
+        {
+            coyoteTimerCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimerCounter -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -84,7 +93,12 @@ public class playerMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            if (onGround) { jumpControl = true; }
+            if (coyoteTimerCounter > 0f) { 
+                jumpControl = true;
+                coyoteTimerCounter = 0f;
+                
+
+            }
         }
         else { jumpControl = false; }
 
